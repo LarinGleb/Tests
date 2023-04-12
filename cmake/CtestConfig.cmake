@@ -1,0 +1,3 @@
+add_library(Ctest STATIC IMPORTED)
+find_library(CTEST_LIBRARY_PATH Ctest HINTS "${CMAKE_CURRENT_LIST_DIR}/../../")
+set_target_properties(Ctest PROPERTIES IMPORTED_LOCATION "${CTEST_LIBRARY_PATH}")
